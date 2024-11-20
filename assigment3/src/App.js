@@ -1,24 +1,23 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+      <div style={{ fontSize }}>
+      <div>
+        <h3>Font Size</h3>
+        <button onClick={() => changeFontSize("small")}>S</button>
+        <button onClick={() => changeFontSize("medium")}>M</button>
+        <button onClick={() => changeFontSize("large")}>L</button>
+      </div>
+      <tr></tr>
+      <div>
+        <TableCreate students={students}></TableCreate>
+      </div>
+      <div></div>
     </div>
+    </>
   );
 }
 
