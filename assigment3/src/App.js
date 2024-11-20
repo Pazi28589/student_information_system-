@@ -1,7 +1,11 @@
 
 import './App.css';
+import { useState } from "react";
+
 
 function App() {
+  const [fontSize, setFontSize] = useState("16px");
+
   const changeFontSize = (size) => {
     switch (size) {
       case "small":
