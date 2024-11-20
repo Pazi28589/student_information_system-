@@ -1,7 +1,9 @@
 
 import './App.css';
 import { useState } from "react";
-
+import TableCreate from "./components/table";
+import "./assets/css/compo.css";
+import { students } from "./data/StudentsDb";
 
 function App() {
   const [fontSize, setFontSize] = useState("16px");
